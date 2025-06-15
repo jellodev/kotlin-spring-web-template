@@ -1,4 +1,4 @@
-package com.project.config
+package com.sample.config
 
 import org.springframework.boot.actuate.health.Health
 import org.springframework.boot.actuate.health.HealthIndicator
@@ -6,7 +6,5 @@ import org.springframework.stereotype.Component
 
 @Component
 class MyHealthIndicator : HealthIndicator {
-    override fun health(): Health {
-        return Health.up().build()
-    }
+    override fun health(): Health = Health.up().build()
 }
