@@ -10,6 +10,21 @@ management:
   endpoint:
     health:
       show-details: "always"
+  tracing:
+    enabled: true
+    # 만약 Zipkin 서버로 트레이스를 전송하고 싶다면 (선택 사항)
+  #zipkin:
+    #tracing:
+      #endpoint: http://localhost:9411/api/v2/spans
+
+springdoc:
+  api-docs:
+    enabled: true
+  cache:
+    disabled: true
+  default-consumes-media-type: application/json
+  default-produces-media-type: application/json
+  override-with-generic-response: false
 
 server:
   port: 8080

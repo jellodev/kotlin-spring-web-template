@@ -5,6 +5,6 @@ import org.springframework.stereotype.Service
 @Service
 class SampleService {
     fun getHelloWorldString(): String {
-        return "Hello, World!"
+        return "Hello, world!"
     }
 }
