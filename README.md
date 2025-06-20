@@ -40,3 +40,8 @@
 ```shell
 ./gradlew ktlintFormat
 ```
+
+### Wiki
+- [swagger](https://springdoc.org/)
+> 필요 시 개인 설정에 따른 PORT 변경 필요 
+- http://localhost:8080/swagger-ui/index.html
